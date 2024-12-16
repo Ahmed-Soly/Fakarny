@@ -4,7 +4,8 @@ import 'color_list/active_color.dart';
 import 'color_list/inactive_color.dart';
 
 class ColorList extends StatefulWidget {
-  const ColorList({super.key});
+  const ColorList({super.key, required this.onColorSelected});
+  final ValueChanged<int> onColorSelected;
 
   @override
   State<ColorList> createState() => _ColorListState();
@@ -27,6 +28,7 @@ class _ColorListState extends State<ColorList> {
                 setState(() {
                   currentIndex=index;
                 });
+                widget.onColorSelected(index);
               },
               child: index == currentIndex ?
               ActiveColor(color: color.color,) :

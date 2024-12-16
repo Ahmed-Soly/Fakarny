@@ -13,6 +13,7 @@ class AddNoteBody extends StatefulWidget {
 
 class _AddNoteBodyState extends State<AddNoteBody> {
   late String title, description,date;
+  late int color=0;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,9 @@ class _AddNoteBodyState extends State<AddNoteBody> {
               prefix:Icons.textsms_outlined,
             ),
             const SizedBox(height: 16),
-            const ColorList(),
+            ColorList(onColorSelected: (int value) {
+              color=value;
+            },),
             const SizedBox(height: 16),
             CustomElevationButton(
               action: () {
