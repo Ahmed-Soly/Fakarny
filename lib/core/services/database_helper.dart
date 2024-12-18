@@ -4,16 +4,8 @@ import '../model/note_model.dart';
 
 class DatabaseHelper {
 
-  static final DatabaseHelper _instance = DatabaseHelper._internal();
+
   static Database? _database;
-
-  // Private constructor
-  DatabaseHelper._internal();
-
-  // Singleton instance
-  factory DatabaseHelper() {
-    return _instance;
-  }
 
   // Get the database instance
   Future<Database> get database async {

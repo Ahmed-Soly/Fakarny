@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../model/note_model.dart';
 
 
@@ -13,9 +12,9 @@ class NoteItemBody extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: MediaQuery.sizeOf(context).height * 0.3,
-        decoration:const BoxDecoration(
-          color: Colors.red,
-          borderRadius: BorderRadius.all(Radius.circular(8)),
+        decoration:BoxDecoration(
+          color: Color(note.color),
+          borderRadius: const BorderRadius.all(Radius.circular(8)),
         ),
         child:Column(
           children: [

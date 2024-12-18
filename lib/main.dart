@@ -4,9 +4,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note/core/routes/app_routes.dart';
 
 import 'core/function_helper/bloc_observer.dart';
+import 'core/services/get_it.dart';
 
 void main() {
   Bloc.observer=MyBlocObserver();
+  getSetup();
   runApp(const NotesApp());
 }
 

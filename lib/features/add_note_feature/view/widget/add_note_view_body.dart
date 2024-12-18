@@ -16,7 +16,7 @@ class AddNoteBody extends StatefulWidget {
 }
 
 class _AddNoteBodyState extends State<AddNoteBody> {
-  late String title, content,date;
+  late String title, content,date='1/1/1';
   late int colorIndex=0;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   @override
@@ -75,6 +75,7 @@ class _AddNoteBodyState extends State<AddNoteBody> {
                       pin: 0,
                     ),
                   );
+                  Navigator.pop(context);
                 }
               },
               text: 'Add note',

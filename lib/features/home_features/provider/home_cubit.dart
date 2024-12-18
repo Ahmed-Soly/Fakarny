@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note/core/services/database_helper.dart';
 import 'home_state.dart';
@@ -12,10 +14,20 @@ class HomeCubit extends Cubit<HomeState>{
     emit(GetAllNotesLoading());
     try {
       final notes = await databaseHelper.getAllNotes();
-      emit(GetAllNotesSuccess(notes: notes));
+      if(notes.isEmpty){
+        emit(GetAllNotesIsEmpty());
+      }else
+      {
+        log('get all notes is done');
+        log('${notes.length}');
+        emit(GetAllNotesSuccess(notes: notes));
+      }
     } catch (e) {
       emit(GetAllNotesError(error: e.toString()));
     }
   }
-
+  void refreshNotes() {
+    getAllNotes();
+    log('refresh is done');// Re-fetch notes after an insert
+  }
 }
