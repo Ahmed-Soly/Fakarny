@@ -12,6 +12,7 @@ class CustomTextForm extends StatelessWidget {
     this.onSaved,
     this.max=1,
     this.length=250,
+    this.fillColor=0xFF1C2B3B,
   });
   final String? hintText;
   final String? labelText;
@@ -21,6 +22,7 @@ class CustomTextForm extends StatelessWidget {
   final bool obscure;
   final IconData? suffix;
   final IconData? prefix;
+  final int fillColor;
   final void Function()? suffixOnPressed;
   final void Function(String?)? onSaved;
 
@@ -71,7 +73,7 @@ class CustomTextForm extends StatelessWidget {
            borderSide: const BorderSide(color: Colors.red, width: 1.0),
          ),
          filled: true,
-         fillColor:const Color(0xff202C40),
+         fillColor: Color(fillColor),
          contentPadding: const EdgeInsets.symmetric(
            horizontal: 16.0,
            vertical: 16.0,

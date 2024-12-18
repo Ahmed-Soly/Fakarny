@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:note/features/home_features/presentation/view/home_view.dart';
 
-import '../../features/search_feature/presentation/view/search_view.dart';
-import '../../features/splash_features/presentation/view/splash_view.dart';
+import '../../features/home_features/view/home_view.dart';
+import '../../features/search_feature/view/search_view.dart';
+import '../../features/splash_features/view/splash_view.dart';
+
 
 class AppRoutes{
 

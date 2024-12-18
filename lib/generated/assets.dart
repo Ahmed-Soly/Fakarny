@@ -2,12 +2,9 @@
 class Assets {
   Assets._();
 
-  static const String fontsNunitoBold = 'assets/fonts/Nunito-Bold.ttf';
-  static const String fontsNunitoMedium = 'assets/fonts/Nunito-Medium.ttf';
-  static const String fontsNunitoRegular = 'assets/fonts/Nunito-Regular.ttf';
-  static const String fontsNunitoSemiBold = 'assets/fonts/Nunito-SemiBold.ttf';
+  static const String imagesHome = 'assets/images/home.png';
   static const String imagesLogo = 'assets/images/Logo.svg';
-  static const String imagesSerchIcon = 'assets/images/serch_icon.svg';
+  static const String imagesSearch = 'assets/images/search.png';
   static const String imagesSplash = 'assets/images/splash.png';
 
 }

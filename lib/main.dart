@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note/core/routes/app_routes.dart';
 
-import 'core/function_helper/blocObserver.dart';
+import 'core/function_helper/bloc_observer.dart';
 
 void main() {
   Bloc.observer=MyBlocObserver();

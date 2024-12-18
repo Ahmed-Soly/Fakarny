@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 
 import '../utils/app_text_styles.dart';
 
-AppBar customAppBar() {
+AppBar customAppBar({
+  required String text,
+  required VoidCallback action,
+  required IconData icon,
+}){
   return AppBar(
-    title: Text('Notes',
+    title: Text(text,
       style:AppTextStyles.bold23.copyWith(
         color: const Color(0xFFB0B9C4),
       ),
@@ -20,8 +24,8 @@ AppBar customAppBar() {
             borderRadius: BorderRadius.circular(15.0),
           ),
           child: IconButton(
-            onPressed: (){},
-            icon: const Icon(Icons.search,
+            onPressed: action,
+            icon: Icon(icon,
               color: Colors.white,
             ),
           ),
