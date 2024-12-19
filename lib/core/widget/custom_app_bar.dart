@@ -5,9 +5,11 @@ import '../utils/app_text_styles.dart';
 AppBar customAppBar({
   required String text,
   required VoidCallback action,
-  required IconData icon,
+  required Widget icon,
+  Widget? widget,
 }){
   return AppBar(
+    leading:widget,
     title: Text(text,
       style:AppTextStyles.bold23.copyWith(
         color: const Color(0xFFB0B9C4),
@@ -25,12 +27,12 @@ AppBar customAppBar({
           ),
           child: IconButton(
             onPressed: action,
-            icon: Icon(icon,
-              color: Colors.white,
-            ),
+            icon: icon,
           ),
         ),
       ),
     ],
   );
 }
+
+

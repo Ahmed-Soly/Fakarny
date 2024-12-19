@@ -18,14 +18,25 @@ class HomeCubit extends Cubit<HomeState>{
         emit(GetAllNotesIsEmpty());
       }else
       {
-        log('get all notes is done');
-        log('${notes.length}');
         emit(GetAllNotesSuccess(notes: notes));
       }
     } catch (e) {
       emit(GetAllNotesError(error: e.toString()));
     }
   }
+
+  Future<void> deleteNote(id) async {
+    emit(DeleteNoteLoading());
+    try {
+      await databaseHelper.deleteNote(id);
+      refreshNotes();
+      emit(DeleteNoteSuccess());
+    } catch (e) {
+      emit(DeleteNoteError(error: e.toString()));
+    }
+  }
+
+
   void refreshNotes() {
     getAllNotes();
     log('refresh is done');// Re-fetch notes after an insert

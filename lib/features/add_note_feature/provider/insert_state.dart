@@ -10,3 +10,4 @@ class NoteInsertFailure extends NoteInsertState {
   final String error;
   NoteInsertFailure(this.error);
 }
+

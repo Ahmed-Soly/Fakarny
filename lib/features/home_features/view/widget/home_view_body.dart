@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
-import '../../../../../generated/assets.dart';
+import 'package:note/core/model/note_model.dart';
+
+import '../../../../core/routes/app_routes.dart';
+import '../../../../core/widget/note_item_body.dart';
 
 class HomeViewBody extends StatelessWidget {
-  const HomeViewBody({super.key});
-
+  const HomeViewBody({super.key, required this.notes});
+  final List<NoteModel> notes;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset(Assets.imagesHome),
-        const SizedBox(height: 10,),
-        const Text('No Notes! create your first note',textAlign: TextAlign.center,),
-      ],
+    return ListView.builder(
+      itemCount: notes.length,
+      itemBuilder: (context, index) {
+        return GestureDetector(
+          onTap: (){
+            Navigator.pushNamed(context, AppRoutes.showItemView,arguments: notes[index]);
+          },
+          child: NoteItemBody(
+            note: notes[index],
+          ),
+        );
+      },
     );
   }
 }

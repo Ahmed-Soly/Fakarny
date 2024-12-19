@@ -51,8 +51,10 @@ class DatabaseHelper {
   // Fetch all notes
   Future<List<NoteModel>> getAllNotes() async {
     final db = await database;
-    final List<Map<String, dynamic>> maps = await db.query('Note');
-
+    final List<Map<String, dynamic>> maps = await db.query(
+        'Note',
+        orderBy: 'pin DESC, date DESC' // Order by pin (pinned first), then by date (newest first)
+    );
     return List.generate(maps.length, (i) {
       return NoteModel.fromJson(maps[i]);
     });
@@ -78,4 +80,18 @@ class DatabaseHelper {
       whereArgs: [id],
     );
   }
+
+  Future<List<NoteModel>> searchNotes(String query) async {
+    final db = await database;
+    final List<Map<String, dynamic>> maps = await db.query(
+      'Note',
+      where: 'LOWER(title) LIKE ?',
+      whereArgs: ['%${query.toLowerCase()}%'], // % means "any characters before or after"
+    );
+
+    return List.generate(maps.length, (i) {
+      return NoteModel.fromJson(maps[i]);
+    });
+  }
+
 }

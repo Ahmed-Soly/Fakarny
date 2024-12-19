@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import '../../../../core/function_helper/get_date_now.dart';
 import '../../../../core/model/note_model.dart';
 import '../../../../core/widget/customTextForm.dart';
 import '../../../../core/widget/custom_elevated_button.dart';
 import '../../../../core/model/color_model.dart';
+import '../../../../core/widget/typing_icon.dart';
 import '../../../home_features/view/widget/color_list_body.dart';
 import '../../provider/insert_cubit.dart';
-
-
 
 class AddNoteBody extends StatefulWidget {
   const AddNoteBody({super.key});
@@ -16,11 +16,13 @@ class AddNoteBody extends StatefulWidget {
 }
 
 class _AddNoteBodyState extends State<AddNoteBody> {
-  late String title, content,date='1/1/1';
+  late String title, content;
   late int colorIndex=0;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  late bool isPinned=false;
   @override
   Widget build(BuildContext context) {
+    var cubit=NoteInsertCubit.get(context);
     return Padding(
       padding: EdgeInsets.only(
         left: 16,
@@ -28,7 +30,7 @@ class _AddNoteBodyState extends State<AddNoteBody> {
         top: 16,
         bottom: MediaQuery.of(context).viewInsets.bottom,// because appear keyboard
       ),
-      child: Form(
+      child:Form(
         key: formKey,
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -37,42 +39,57 @@ class _AddNoteBodyState extends State<AddNoteBody> {
               'Create your note',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
             CustomTextForm(
               hintText:'Title',
               onSaved: (value) {
                 title=value!;
               },
-              prefix:Icons.textsms_outlined,
+              prefix: const TypingIcon(),
             ),
             const SizedBox(height: 16),
             CustomTextForm(
               hintText:'Description',
+              max: 2,
+              length:300,
               textInputType:TextInputType.multiline,
               onSaved: (value) {
                 content=value!;
               },
-              prefix:Icons.textsms_outlined,
+              prefix:const TypingIcon(),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
             ColorList(
               onColorSelected: (int value) {
                 colorIndex=value;
-            },),
+              },),
             const SizedBox(
-                height: 16
+                height: 10
+            ),
+            Row(
+              children: [
+                Checkbox(
+                  value: isPinned,
+                  onChanged: (val){
+                    setState(() {
+                      isPinned=val!;
+                    });
+                  }, // Directly pass the function
+                ),
+                const Text('Mark as pinned'),
+              ],
             ),
             CustomElevationButton(
               action: () {
                 if (formKey.currentState!.validate()) {
                   formKey.currentState!.save();
-                  NoteInsertCubit.get(context).insertNote(
+                  cubit.insertNote(
                     NoteModel(
                       title: title,
                       content: content,
-                      date: date,
+                      date: getDateNow(),
                       color: colorsList[colorIndex].color,
-                      pin: 0,
+                      pin: isPinned?1:0,
                     ),
                   );
                   Navigator.pop(context);

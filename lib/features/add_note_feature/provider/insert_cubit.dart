@@ -1,3 +1,4 @@
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note/features/home_features/provider/home_cubit.dart';
 import '../../../../core/model/note_model.dart';
@@ -26,4 +27,5 @@ class NoteInsertCubit extends Cubit<NoteInsertState> {
       emit(NoteInsertFailure(e.toString()));
     }
   }
+
 }

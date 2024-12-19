@@ -16,3 +16,11 @@ class GetAllNotesError extends HomeState {
   GetAllNotesError({required this.error});
 }
 
+class DeleteNoteLoading extends HomeState {}
+class DeleteNoteSuccess extends HomeState {}
+class DeleteNoteError extends HomeState {
+  final String error;
+  DeleteNoteError({required this.error});
+}
+
+
