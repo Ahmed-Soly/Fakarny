@@ -4,9 +4,11 @@ class Assets {
 
   static const String addNoteFeatureProviderInsertState = 'lib/features/add_note_feature/provider/insert_state.dart~';
   static const String addNoteFeatureViewAddNoteView = 'lib/features/add_note_feature/view/add_note_view.dart~';
+  static const String assetsImagesLogo = 'assets/images/Logo.svg';
   static const String colorListActiveColor = 'lib/features/home_features/view/widget/color_list/active_color.dart';
   static const String colorListInactiveColor = 'lib/features/home_features/view/widget/color_list/inactive_color.dart';
   static const String coreErrorFailure = 'lib/core/error/failure.dart~';
+  static const String coreModelColorModel = 'lib/core/model/color_model.dart~';
   static const String coreWidgetCustomElevatedButton = 'lib/core/widget/custom_elevated_button.dart~';
   static const String coreWidgetDeleteDialog = 'lib/core/widget/delete_dialog.dart~';
   static const String errorFailure = 'lib/core/error/failure.dart';
@@ -22,7 +24,7 @@ class Assets {
   static const String imagesAdd = 'assets/images/add.svg';
   static const String imagesHome = 'assets/images/home.png';
   static const String imagesHomeView = 'assets/images/home_view.svg';
-  static const String imagesLogo = 'assets/images/Logo.svg';
+  static const String imagesLogo = 'assets/images/Logo.png';
   static const String imagesSearch = 'assets/images/search.png';
   static const String imagesSplash = 'assets/images/splash.png';
   static const String libGeneratedAssets = 'lib/generated/assets.dart~';
@@ -40,8 +42,10 @@ class Assets {
   static const String providerShowNoteCubit = 'lib/features/show_item_feature/provider/show_note_cubit.dart';
   static const String providerShowNoteState = 'lib/features/show_item_feature/provider/show_note_state.dart';
   static const String routesAppRoutes = 'lib/core/routes/app_routes.dart';
+  static const String searchFeatureViewSearchView = 'lib/features/search_feature/view/search_view.dart~';
   static const String servicesDatabaseHelper = 'lib/core/services/database_helper.dart';
   static const String servicesGetIt = 'lib/core/services/get_it.dart';
+  static const String showItemFeatureViewShowNoteView = 'lib/features/show_item_feature/view/show_note_view.dart~';
   static const String splashFeaturesViewSplashView = 'lib/features/splash_features/view/splash_view.dart~';
   static const String utilsAppTextStyles = 'lib/core/utils/app_text_styles.dart';
   static const String viewAddNoteView = 'lib/features/add_note_feature/view/add_note_view.dart';
@@ -50,7 +54,7 @@ class Assets {
   static const String viewShowItemView = 'lib/features/show_item_feature/view/show_item_view.dart~';
   static const String viewShowNoteView = 'lib/features/show_item_feature/view/show_note_view.dart';
   static const String viewSplashView = 'lib/features/splash_features/view/splash_view.dart';
-  static const String viewWidgetSearchViewBody = 'lib/features/search_feature/view/widget/search_view_body.dart~';
+  static const String viewWidgetSearchEmpty = 'lib/features/search_feature/view/widget/search_empty.dart~';
   static const String widgetAddNoteViewBody = 'lib/features/add_note_feature/view/widget/add_note_view_body.dart';
   static const String widgetColorListBody = 'lib/features/home_features/view/widget/color_list_body.dart';
   static const String widgetCustomAppBar = 'lib/core/widget/custom_app_bar.dart';

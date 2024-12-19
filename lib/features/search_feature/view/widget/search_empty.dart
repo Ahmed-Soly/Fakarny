@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/app_text_styles.dart';
 import '../../../../generated/assets.dart';
 
 class SearchEmpty extends StatelessWidget {
@@ -13,6 +14,11 @@ class SearchEmpty extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Image.asset(Assets.imagesSearch),
+            const SizedBox(height: 20,),
+            Text('Search of your notes',
+              textAlign: TextAlign.center,
+              style:AppTextStyles.bold20,
+            ),
           ],
         ),
       ),

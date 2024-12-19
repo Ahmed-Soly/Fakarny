@@ -19,10 +19,10 @@ class AddNoteView extends StatelessWidget {
       child: BlocConsumer<NoteInsertCubit,NoteInsertState>(
         listener: (context,state){
           if(state is NoteInsertSuccess){
-            showSnackBar(context, "Note Inserted successfully", Colors.teal);
+            showSnackBar(context, "Note Inserted successfully");
           }
           if(state is NoteInsertFailure){
-            showSnackBar(context,state.error, Colors.teal);
+            showSnackBar(context,state.error);
           }
         },
         builder: (context,state){

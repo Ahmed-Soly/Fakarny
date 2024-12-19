@@ -40,7 +40,7 @@ class _SearchViewBodyState extends State<SearchViewBody> {
             BlocConsumer<SearchCubit,SearchState>(
               listener:(context,state){
                 if(state is SearchNotesEmpty){
-                  showSnackBar(context, 'No results found', Colors.teal);
+                  showSnackBar(context, 'No results found');
                 }
               },
                 builder:(context,state){

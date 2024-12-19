@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note/core/utils/app_text_styles.dart';
 import '../../../../../core/routes/app_routes.dart';
 import '../../../../../generated/assets.dart';
 
@@ -51,9 +52,12 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
             animation:slidingAnimation,
             builder: (context, child)=>SlideTransition(
                 position: slidingAnimation,
-              child:Text('Lets Start',
+              child:Text('Let\'s Craft Your Thoughts',
                 textAlign:TextAlign.center,
-                style: Theme.of(context).textTheme.headlineMedium,),
+                style: AppTextStyles.bold20.copyWith(
+                  color:Colors.white,
+                ),
+              ),
             )
         )
 

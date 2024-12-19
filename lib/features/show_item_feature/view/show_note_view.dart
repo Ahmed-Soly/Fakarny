@@ -21,15 +21,15 @@ class ShowItemView extends StatelessWidget {
       child: BlocConsumer<ShowNoteCubit, ShowNoteState>(
         listener: (context, state) {
           if(state is NoteDeletedSuccess){
-            showSnackBar(context,'Note Deleted Successfully', Colors.teal);
+            showSnackBar(context,'Note Deleted Successfully');
             Navigator.pop(context);
           }
           if(state is NoteUpdateSuccess){
-            showSnackBar(context,'Note Updated Successfully', Colors.teal);
+            showSnackBar(context,'Note Updated Successfully');
             Navigator.pushReplacementNamed(context, AppRoutes.homeView);
           }
           if(state is NoteUpdateFailure){
-            showSnackBar(context,state.error, Colors.teal);
+            showSnackBar(context,state.error);
             Navigator.pushReplacementNamed(context, AppRoutes.homeView);
           }
         },
