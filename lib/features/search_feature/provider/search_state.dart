@@ -10,5 +10,5 @@ class SearchNotesSuccess extends SearchState {
   final List<NoteModel> notes;
   SearchNotesSuccess({required this.notes});
 }
-
+class SearchNotesEmpty extends SearchState {}
 class SearchNotesFailure extends SearchState {}

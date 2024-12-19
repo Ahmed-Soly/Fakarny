@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note/core/widget/customTextForm.dart';
-
 import '../../../../../generated/assets.dart';
+import '../../../home_features/view/widget/home_view_body.dart';
 import '../../provider/search_cubit.dart';
+import '../../provider/search_state.dart';
 
 class SearchViewBody extends StatefulWidget {
   const SearchViewBody({super.key});
@@ -35,11 +36,15 @@ class _SearchViewBodyState extends State<SearchViewBody> {
               },
             ),
             const SizedBox(height:15,),
-            Expanded(
-              child: CustomScrollView(
-                slivers: [
-                  SliverToBoxAdapter(
-                    child: Center(
+            BlocBuilder<SearchCubit,SearchState>(
+                builder:(context,state){
+                  if(state is SearchNotesLoading){
+                    return const Center(child: CircularProgressIndicator(),);
+                  }
+                  else if(state is SearchNotesSuccess){
+                    return Expanded(child: HomeViewBody(notes:state.notes));
+                  }else if(state is SearchNotesEmpty){
+                    Center(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -49,11 +54,22 @@ class _SearchViewBodyState extends State<SearchViewBody> {
                           const Text('No results found',textAlign: TextAlign.center,),
                         ],
                       ),
+                    );
+                  }
+                  return Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Image.asset(Assets.imagesSearch),
+                        const SizedBox(height: 10.0,),
+                        const Text('Search to find notes',textAlign: TextAlign.center,),
+                      ],
                     ),
-                  ),
-                ],
-              ),
+                  );
+                }
             ),
+
           ],
         ),
       ),

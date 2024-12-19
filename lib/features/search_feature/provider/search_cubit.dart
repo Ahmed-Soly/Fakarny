@@ -11,7 +11,12 @@ class SearchCubit extends Cubit<SearchState>{
 
   Future<void> searchNotes(String query) async {
     List<NoteModel> notes = await databaseHelper.searchNotes(query);
-    emit(SearchNotesSuccess(notes:notes));
+    if(notes.isEmpty){
+      emit(SearchNotesEmpty());
+    }else{
+      emit(SearchNotesSuccess(notes:notes));
+    }
+
   }
 
 
