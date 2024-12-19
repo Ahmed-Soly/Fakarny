@@ -25,6 +25,7 @@ class Assets {
   static const String imagesLogo = 'assets/images/Logo.svg';
   static const String imagesSearch = 'assets/images/search.png';
   static const String imagesSplash = 'assets/images/splash.png';
+  static const String libGeneratedAssets = 'lib/generated/assets.dart~';
   static const String libMain = 'lib/main.dart';
   static const String modelColorModel = 'lib/core/model/color_model.dart';
   static const String modelNoteModel = 'lib/core/model/note_model.dart';
@@ -39,7 +40,6 @@ class Assets {
   static const String providerShowNoteCubit = 'lib/features/show_item_feature/provider/show_note_cubit.dart';
   static const String providerShowNoteState = 'lib/features/show_item_feature/provider/show_note_state.dart';
   static const String routesAppRoutes = 'lib/core/routes/app_routes.dart';
-  static const String searchFeatureProviderSearchState = 'lib/features/search_feature/provider/search_state.dart~';
   static const String servicesDatabaseHelper = 'lib/core/services/database_helper.dart';
   static const String servicesGetIt = 'lib/core/services/get_it.dart';
   static const String splashFeaturesViewSplashView = 'lib/features/splash_features/view/splash_view.dart~';
@@ -50,6 +50,7 @@ class Assets {
   static const String viewShowItemView = 'lib/features/show_item_feature/view/show_item_view.dart~';
   static const String viewShowNoteView = 'lib/features/show_item_feature/view/show_note_view.dart';
   static const String viewSplashView = 'lib/features/splash_features/view/splash_view.dart';
+  static const String viewWidgetSearchViewBody = 'lib/features/search_feature/view/widget/search_view_body.dart~';
   static const String widgetAddNoteViewBody = 'lib/features/add_note_feature/view/widget/add_note_view_body.dart';
   static const String widgetColorListBody = 'lib/features/home_features/view/widget/color_list_body.dart';
   static const String widgetCustomAppBar = 'lib/core/widget/custom_app_bar.dart';
@@ -61,6 +62,7 @@ class Assets {
   static const String widgetHomeEmpty = 'lib/features/home_features/view/widget/home_empty.dart';
   static const String widgetHomeViewBody = 'lib/features/home_features/view/widget/home_view_body.dart';
   static const String widgetNoteItemBody = 'lib/core/widget/note_item_body.dart';
+  static const String widgetSearchEmpty = 'lib/features/search_feature/view/widget/search_empty.dart';
   static const String widgetSearchViewBody = 'lib/features/search_feature/view/widget/search_view_body.dart';
   static const String widgetShowItemViewBody = 'lib/features/show_item_feature/view/widget/show_item_view_body.dart';
   static const String widgetShowNoteAppBar = 'lib/core/widget/show_note_app_bar.dart';

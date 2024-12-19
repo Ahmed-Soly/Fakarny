@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:note/core/routes/app_routes.dart';
 import 'package:note/core/services/get_it.dart';
 import 'package:note/core/widget/snake_bar.dart';
 import 'package:note/features/show_item_feature/view/widget/show_item_view_body.dart';
@@ -25,11 +26,11 @@ class ShowItemView extends StatelessWidget {
           }
           if(state is NoteUpdateSuccess){
             showSnackBar(context,'Note Updated Successfully', Colors.teal);
-            Navigator.pop(context);
+            Navigator.pushReplacementNamed(context, AppRoutes.homeView);
           }
           if(state is NoteUpdateFailure){
             showSnackBar(context,state.error, Colors.teal);
-            Navigator.pop(context);
+            Navigator.pushReplacementNamed(context, AppRoutes.homeView);
           }
         },
         builder:(context, state) {
