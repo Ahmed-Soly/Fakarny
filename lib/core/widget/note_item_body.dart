@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note/core/utils/app_text_styles.dart';
 import '../model/note_model.dart';
 import '../routes/app_routes.dart';
 
@@ -32,8 +33,10 @@ class NoteItemBody extends StatelessWidget {
                       Expanded(
                           child: Text(
                         note.title,
+                        style:AppTextStyles.bold16,
                         overflow: TextOverflow.ellipsis,
-                      )),
+                      )
+                      ),
                       const SizedBox(
                         width: 5.0,
                       ),
@@ -46,6 +49,7 @@ class NoteItemBody extends StatelessWidget {
                   Expanded(
                     child: Text(
                       note.content,
+                      style:AppTextStyles.regular14,
                       overflow: TextOverflow.ellipsis,
                       maxLines: 2,
                     ),
@@ -61,7 +65,9 @@ class NoteItemBody extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, AppRoutes.showItemView,arguments: note);
             },
-            icon: note.pin == 1 ? const Icon(Icons.push_pin) : const SizedBox.shrink(),
+            icon: note.pin == 1 ?
+            const Icon(Icons.push_pin) :
+            const SizedBox.shrink(),
           )
         ],
       ),

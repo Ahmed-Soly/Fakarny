@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../utils/app_text_styles.dart';
 
 class CustomElevationButton extends StatelessWidget {
   const CustomElevationButton({super.key, required this.text, required this.action});
@@ -19,9 +20,8 @@ class CustomElevationButton extends StatelessWidget {
         onPressed:action,
         child:Text(
           text,
-          style: const TextStyle(
-            fontSize: 16,
-            color: Colors.white,
+          style:AppTextStyles.bold16.copyWith(
+            color:Colors.white,
           ),
         ),
       ),
