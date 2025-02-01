@@ -1,16 +1,12 @@
-# note
+#Fakarny
 
-A new Flutter project.
+A Flutter Notes App
 
 ## Getting Started
+This is the abstraction of app
 
-This project is a starting point for a Flutter application.
+Fakarny is a mobile application designed to help users organize their thoughts, ideas, and tasks effortlessly. Built with Flutter, the app offers a clean and user-friendly interface, making it easy for individuals to keep track of their daily activities and manage their mental workload.
 
-A few resources to get you started if this is your first Flutter project:
+Features
+1. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
