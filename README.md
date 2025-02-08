@@ -1,12 +1,10 @@
-Mobile Notes App
-
-## Getting Started
-This is the abstraction of app
-
+## Abstraction of app
 Fakarny is a mobile application designed to help users organize their thoughts, ideas, and tasks effortlessly. Built with Flutter, the app offers a clean and user-friendly interface, making it easy for individuals to keep track of their daily activities and manage their mental workload.
 
-Features
-1. 
+## Features
+1. A local database can store your notes.
+2. Can edit notes in easily way.
+3. search an any note by name. 
 
 ## Project screenshot:-
 Splash screen
