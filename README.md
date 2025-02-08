@@ -15,6 +15,7 @@ Splash screen
   <img src="https://github.com/user-attachments/assets/917af0a7-ab60-4a7b-b008-e3a46b651abc" alt="Image 1" width="200"/>
   &nbsp;&nbsp;&nbsp;
 </p>
+
 Home screen
 
 <p align="start">
