@@ -10,11 +10,13 @@ Features
 
 ## Project screenshot:-
 Splash screen
+
 <p align="start">
   <img src="https://github.com/user-attachments/assets/917af0a7-ab60-4a7b-b008-e3a46b651abc" alt="Image 1" width="200"/>
   &nbsp;&nbsp;&nbsp;
 </p>
 Home screen
+
 <p align="start">
   <img src="https://github.com/user-attachments/assets/0505871c-25f0-4793-b78e-9f9aa88b7774" alt="Image 1" width="200"/>
   &nbsp;&nbsp;&nbsp;
@@ -24,6 +26,7 @@ Home screen
   &nbsp;&nbsp;&nbsp;
 </p>
 Update Note
+
 <p align="start">
   <img src="https://github.com/user-attachments/assets/63d7fb35-2802-43d5-a5fb-0ad5bbce52e9" alt="Image 1" width="200"/>
   &nbsp;&nbsp;&nbsp;
@@ -31,6 +34,7 @@ Update Note
   &nbsp;&nbsp;&nbsp;
 </p>
 Search
+
 <p align="start">
   <img src="https://github.com/user-attachments/assets/149e51fd-9c39-4dfa-a783-bfc16989c5ce" alt="Image 1" width="200"/>
   &nbsp;&nbsp;&nbsp;
