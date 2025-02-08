@@ -26,6 +26,8 @@ Home screen
   <img src="https://github.com/user-attachments/assets/9ed002cc-a657-4bba-adef-b2eda68b2c19" alt="Image 3" width="200"/>
   &nbsp;&nbsp;&nbsp;
 </p>
+
+
 Update Note
 
 <p align="start">
@@ -34,6 +36,8 @@ Update Note
   <img src="https://github.com/user-attachments/assets/376ea326-d635-4db1-8c85-65f3ce50e32a" alt="Image 2" width="200"/>
   &nbsp;&nbsp;&nbsp;
 </p>
+
+
 Search
 
 <p align="start">
