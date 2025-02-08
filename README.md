@@ -12,7 +12,7 @@ Features
 
 ## Project screenshot:-
 Splash screen
-![note3](https://github.com/user-attachments/assets/917af0a7-ab60-4a7b-b008-e3a46b651abc)
+<img src="https://github.com/user-attachments/assets/917af0a7-ab60-4a7b-b008-e3a46b651abc" width="300" />
 
 Home screen
 ![note2](https://github.com/user-attachments/assets/0505871c-25f0-4793-b78e-9f9aa88b7774)
