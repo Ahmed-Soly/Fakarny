@@ -1,4 +1,4 @@
-#Fakarny
+![note9](https://github.com/user-attachments/assets/3534cf90-0107-49a6-9377-582f9950631f)#Fakarny
 
 A Flutter Notes App
 
@@ -9,4 +9,32 @@ Fakarny is a mobile application designed to help users organize their thoughts, 
 
 Features
 1. 
+
+## Project screenshot:-
+Splash screen
+![note3](https://github.com/user-attachments/assets/917af0a7-ab60-4a7b-b008-e3a46b651abc)
+
+Home screen
+![note2](https://github.com/user-attachments/assets/0505871c-25f0-4793-b78e-9f9aa88b7774)
+![note1](https://github.com/user-attachments/assets/31c15984-16c9-4443-87e8-9776c8093108) 
+![note4](https://github.com/user-attachments/assets/9ed002cc-a657-4bba-adef-b2eda68b2c19)
+
+Update Note
+![note5](https://github.com/user-attachments/assets/63d7fb35-2802-43d5-a5fb-0ad5bbce52e9)
+![note6](https://github.com/user-attachments/assets/376ea326-d635-4db1-8c85-65f3ce50e32a)
+
+Search
+![note7](https://github.com/user-attachments/assets/149e51fd-9c39-4dfa-a783-bfc16989c5ce)
+![note9](https://github.com/user-attachments/assets/360d0f43-410a-4af6-8216-d5fa943a03eb)
+
+
+
+
+
+
+
+
+
+
+
 
