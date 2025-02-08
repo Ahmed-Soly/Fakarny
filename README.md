@@ -11,15 +11,13 @@ Features
 1. 
 
 ## Project screenshot:-
+
 <img src="https://github.com/user-attachments/assets/917af0a7-ab60-4a7b-b008-e3a46b651abc" alt="Fakarny Spalsh Screen"  width="300" />
-###  Your personal reminder app to help organize your daily tasks efficiently!
 
 Home screen
-![note2](https://github.com/user-attachments/assets/0505871c-25f0-4793-b78e-9f9aa88b7774)
 
-![note1](https://github.com/user-attachments/assets/31c15984-16c9-4443-87e8-9776c8093108) 
+<img src="https://github.com/user-attachments/assets/0505871c-25f0-4793-b78e-9f9aa88b7774" width="300" /> <img src="https://github.com/user-attachments/assets/31c15984-16c9-4443-87e8-9776c8093108" width="300"<img src="https://github.com/user-attachments/assets/9ed002cc-a657-4bba-adef-b2eda68b2c19" width="300" />
 
-![note4](https://github.com/user-attachments/assets/9ed002cc-a657-4bba-adef-b2eda68b2c19)
 
 Update Note
 ![note5](https://github.com/user-attachments/assets/63d7fb35-2802-43d5-a5fb-0ad5bbce52e9)
