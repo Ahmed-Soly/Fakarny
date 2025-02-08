@@ -18,8 +18,8 @@ Home screen
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0505871c-25f0-4793-b78e-9f9aa88b7774" alt="Image 1" width="200"/>
-  <img src="https://github.com/user-attachments/assets/31c15984-16c9-4443-87e8-9776c8093108" alt="Image 2" width="200"/>
-  <img src="https://github.com/user-attachments/assets/9ed002cc-a657-4bba-adef-b2eda68b2c19" alt="Image 3" width="200"/>
+  <img src="https://github.com/user-attachments/assets/31c15984-16c9-4443-87e8-9776c8093108" alt="Image 2" width="200 style="margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/9ed002cc-a657-4bba-adef-b2eda68b2c19" alt="Image 3" width="200 style="margin-right: 10px;"/>
 </p>
 
 Update Note
