@@ -1,6 +1,4 @@
-![note9](https://github.com/user-attachments/assets/3534cf90-0107-49a6-9377-582f9950631f)#Fakarny
-
-A Flutter Notes App
+Mobile Notes App
 
 ## Getting Started
 This is the abstraction of app
